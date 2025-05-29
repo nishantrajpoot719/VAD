@@ -1,0 +1,6 @@
+{
+  "ffmpeg_path": "E:\\Country Delight\\Video processing - Copy (2)\\ffmpeg_binary\\ffmpeg.exe",
+  "ffmpeg_version": "latest",
+  "pydub_configured": true,
+  "moviepy_configured": true
+}
