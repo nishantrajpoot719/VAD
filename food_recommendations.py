@@ -34,7 +34,7 @@ def get_food_recommendations(vad_score, intent_selections, contextual_data):
         
         # Call the Groq API
         completion = client.chat.completions.create(
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {
                     "role": "system",
