@@ -45,6 +45,5 @@ pillow>=9.0.0
 
 # For machine learning
 tensorflow==2.19.0
-keras==3.9.2
-keras-core
+tf-keras
 h5py>=3.7.0
