@@ -4,7 +4,7 @@ services:
     env: python
     pythonVersion: 3.10.11
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python vad_api.py"
+    startCommand: "python api.py"
     envVars:
       - key: GROQ_API_KEY
         sync: false
