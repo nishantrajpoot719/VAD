@@ -45,5 +45,5 @@ pillow>=9.0.0
 
 # For machine learning
 tensorflow>=2.10.0  # Required for DeepFace
-tensorflow-keras>=2.10.0
+keras==3.9.2
 h5py>=3.7.0  # Required for model serialization
