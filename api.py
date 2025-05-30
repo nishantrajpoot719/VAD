@@ -19,7 +19,7 @@ CORS(app)
 def home():
     return '🎯 VAD-Based Food Recommendation API is running!'
 
-@app.route('/get-recommendation', methods=['POST'])
+@app.route('/get-recommendation', methods=['POST', 'GET'])
 def get_recommendation():
     try:
         # Expecting JSON input with video path + intent options
