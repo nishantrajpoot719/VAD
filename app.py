@@ -20,6 +20,14 @@ import opensmile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from improved_ravdess_integration import integrate_with_audio_pipeline, retrain_with_new_data  # Import the improved emotion classifier
 
+# Auto-check for ffmpeg_binary/ffmpeg.exe
+from download_ffmpeg import download_and_extract_ffmpeg
+
+FFMPEG_PATH = os.path.join("ffmpeg_binary", "ffmpeg.exe")
+if not os.path.exists(FFMPEG_PATH):
+    download_and_extract_ffmpeg()
+
+
 # Explicitly import audio preprocessing functions and make them available globally
 try:
     from audio_preprocessing import preprocess_audio_for_opensmile, fix_nan_values_in_features, ensure_ffmpeg_available
