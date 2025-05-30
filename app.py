@@ -19,6 +19,8 @@ from deepface import DeepFace
 import opensmile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from improved_ravdess_integration import integrate_with_audio_pipeline, retrain_with_new_data  # Import the improved emotion classifier
+import keras
+keras.config.set_backend("tensorflow")
 
 # Auto-check for ffmpeg_binary/ffmpeg.exe
 from download_ffmpeg import download_and_extract_ffmpeg
