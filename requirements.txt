@@ -44,6 +44,7 @@ imutils>=0.5.4
 pillow>=9.0.0
 
 # For machine learning
-tensorflow>=2.10.0  # Required for DeepFace
-keras==3.9.2
-h5py>=3.7.0  # Required for model serialization
+tensorflow==2.19.0
+keras==3.3.3
+keras-core
+h5py>=3.7.0
