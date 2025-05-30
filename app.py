@@ -11,7 +11,7 @@ import csv
 import threading
 import pandas as pd
 import numpy as np
-from moviepy.editor import VideoFileClip, AudioFileClip
+from moviepy import VideoFileClip, AudioFileClip
 import cv2
 from pydub import AudioSegment
 import noisereduce as nr
